@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -22,6 +21,9 @@
   height: 100%;
   display:flex;
 
+}
+pre {
+  margin: 0;
 }
 #code {
   padding: 16px;
