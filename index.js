@@ -140,7 +140,8 @@ const css3 = `/*
   font-family: "Hanzipen SC"
  }
   hr {
-    border-color: #EEEEEE;
+    border:none;
+    border-top: 1px solid rgba(0,0,0,0.1);
   }
   li {
     padding: 2px;
@@ -202,12 +203,12 @@ const markdown = `# 自我介绍
 - 手机 13116657989
 
 `
-writeCss("", css1, 50, () => {
+writeCss("", css1, 1, () => {
   createPaper()
-  writeMarkdown(markdown, 10, () => {
-    writeCss(css1, css2, 10, () => {
+  writeMarkdown(markdown, 1, () => {
+    writeCss(css1, css2, 1, () => {
       MarkdownToHtml()
-      writeCss(css1 + css2, css3, 10)
+      writeCss(css1 + css2, css3, 1)
     })
   })
 })
