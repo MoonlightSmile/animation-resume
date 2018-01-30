@@ -80,6 +80,7 @@ html{
   width: 100%;
   overflow: scroll;
   border: 1px solid #aaa;
+  border-radius: 5px;
 
 }
 
@@ -114,6 +115,7 @@ html{
 }
 .wrap-paper .resume {
   border: 1px solid #aaa;
+  border-radius: 5px;
   width: 100%;
 }
 /* 于是我就可以在白纸上写字了，请看右边 */
@@ -130,7 +132,30 @@ const css2 = `/* 接下来用一个优秀的库 marked.js
 
 `
 const css3 = `/*
-
+ * 再给它加点样式
+ */
+ .resume {
+  color: #333333;
+  background: #fff;
+  font-family: "Hanzipen SC"
+ }
+  hr {
+    border-color: #EEEEEE;
+  }
+  li {
+    padding: 2px;
+  }
+  a {
+    color: #5082BF;
+    text-decoration: none;
+    border-bottom: 1px solid ;
+    font-family: "Hanzipen SC";
+    transition: all .1s;
+  }
+  a:hover {
+    opacity: 0.6;
+  }
+ /*
  * 这就是我的会动的简历
  * 谢谢观看
  */
@@ -139,10 +164,20 @@ const css3 = `/*
 const markdown = `# 自我介绍
 ----
 我叫蔡逍侠
+
+
 1994 年 12 月出生
+
+
 宁波电视大学毕业
+
+
 自学前端半年
+
+
 希望应聘前端开发岗位
+
+
 
 # 技能介绍
 ----
@@ -153,21 +188,21 @@ const markdown = `# 自我介绍
 
 # 项目介绍
 ----
-1. [苹果风轮播](https://moonlightsmile.github.io/appleStyle/index.html)
-2. [在线简历](https://moonlightsmile.github.io/resume/index.html)
-3. [canvas画板](https://moonlightsmile.github.io/draw/)
-4. [豆瓣 Top250](https://moonlightsmile.github.io/DoubanTop250/index.html)
-5. [导航首页](https://moonlightsmile.github.io/nav/index.html)
-6. [留言板](https://moonlightsmile.github.io/postMessage/index.html)
+- [苹果风轮播](https://moonlightsmile.github.io/appleStyle/index.html)
+- [在线简历](https://moonlightsmile.github.io/resume/index.html)
+- [canvas画板](https://moonlightsmile.github.io/draw/)
+- [豆瓣 Top250](https://moonlightsmile.github.io/DoubanTop250/index.html)
+- [导航首页](https://moonlightsmile.github.io/nav/index.html)
+- [留言板](https://moonlightsmile.github.io/postMessage/index.html)
 
 # 联系方式
 ----
-- QQ:362652565
-- Email:362652565@qq.com
-- 手机:13116657989
+- QQ 362652565
+- Email [AmoonlightSmile@gmail.com]()
+- 手机 13116657989
 
 `
-writeCss("", css1, 1, () => {
+writeCss("", css1, 50, () => {
   createPaper()
   writeMarkdown(markdown, 10, () => {
     writeCss(css1, css2, 10, () => {

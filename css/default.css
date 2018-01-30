@@ -3,7 +3,6 @@
   box-sizing: border-box;
 }
 
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -39,9 +38,6 @@ pre {
 }
 
 
-code {
-  background: rgba(0, 0, 0, .1);
-}
 .wrap-paper {
   padding: 16px;
   font-size: 16px;
