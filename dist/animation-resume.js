@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
+})({7:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],9:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":10}],6:[function(require,module,exports) {
+},{"./bundle-url":7}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],8:[function(require,module,exports) {
+},{"_css_loader":4}],5:[function(require,module,exports) {
 var global = (1,eval)("this");
 
 /* **********************************************
@@ -979,7 +979,7 @@ Prism.languages.js = Prism.languages.javascript;
 
 })();
 
-},{}],11:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * marked - a markdown parser
@@ -2302,7 +2302,7 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
   return this || (typeof window !== 'undefined' ? window : global);
 }());
 
-},{}],4:[function(require,module,exports) {
+},{}],2:[function(require,module,exports) {
 "use strict";
 
 require("./css/default.css");
@@ -2402,7 +2402,7 @@ html{
 
 .wrap-code {
 
-  width: 50%;
+  width: 40%;
 }
 
 /* 我需要一张白纸
@@ -2410,12 +2410,11 @@ html{
 */
 .wrap-paper {
   position: fixed;
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   padding: 16px;
   right: 0;
-  padding: 16px;
 }
 .wrap-paper .resume {
   border: 1px solid #aaa;
@@ -2442,70 +2441,35 @@ const css3 = `/*
 `;
 
 const markdown = `# 自我介绍
-
-我叫 XXX
-1990 年 1 月出生
-XXX 学校毕业
+----
+我叫蔡逍侠
+1994 年 12 月出生
+宁波电视大学毕业
 自学前端半年
 希望应聘前端开发岗位
 
 # 技能介绍
+----
+- 熟悉 JavaScript CSS HTML
+- 熟悉 \`yarn\`，\`npm\`，\`parcel\`, \`git\`
+- 熟悉 \`css3\`, \`HTML5\`
 
-熟悉 JavaScript CSS
 
 # 项目介绍
-
-1. XXX 轮播
-2. XXX 简历
-3. XXX 画板
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
+----
+1. [苹果风轮播](https://moonlightsmile.github.io/appleStyle/index.html)
+2. [在线简历](https://moonlightsmile.github.io/resume/index.html)
+3. [canvas画板](https://moonlightsmile.github.io/draw/)
+4. [豆瓣 Top250](https://moonlightsmile.github.io/DoubanTop250/index.html)
+5. [导航首页](https://moonlightsmile.github.io/nav/index.html)
+6. [留言板](https://moonlightsmile.github.io/postMessage/index.html)
 
 # 联系方式
+----
+- QQ:362652565
+- Email:362652565@qq.com
+- 手机:13116657989
 
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
 `;
 writeCss("", css1, 1, () => {
   createPaper();
@@ -2516,7 +2480,7 @@ writeCss("", css1, 1, () => {
     });
   });
 });
-},{"./css/default.css":6,"prismjs":8,"marked":11}],12:[function(require,module,exports) {
+},{"./css/default.css":3,"prismjs":5,"marked":6}],11:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -2536,7 +2500,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '54296' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '63110' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -2637,5 +2601,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[12,4])
+},{}]},{},[11,2])
 //# sourceMappingURL=/dist/animation-resume.map

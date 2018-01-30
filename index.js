@@ -3,6 +3,7 @@ const Prism = require("prismjs");
 const marked = require('marked');
 
 
+
 const writeCss = (prefix, result, duration, callBack) => {
   let n = 0;
   const pre = document.querySelector("#code")
@@ -97,7 +98,7 @@ html{
 
 .wrap-code {
 
-  width: 50%;
+  width: 40%;
 }
 
 /* 我需要一张白纸
@@ -105,12 +106,11 @@ html{
 */
 .wrap-paper {
   position: fixed;
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   padding: 16px;
   right: 0;
-  padding: 16px;
 }
 .wrap-paper .resume {
   border: 1px solid #aaa;
@@ -137,70 +137,35 @@ const css3 = `/*
 `
 
 const markdown = `# 自我介绍
-
-我叫 XXX
-1990 年 1 月出生
-XXX 学校毕业
+----
+我叫蔡逍侠
+1994 年 12 月出生
+宁波电视大学毕业
 自学前端半年
 希望应聘前端开发岗位
 
 # 技能介绍
+----
+- 熟悉 JavaScript CSS HTML
+- 熟悉 \`yarn\`，\`npm\`，\`parcel\`, \`git\`
+- 熟悉 \`css3\`, \`HTML5\`
 
-熟悉 JavaScript CSS
 
 # 项目介绍
-
-1. XXX 轮播
-2. XXX 简历
-3. XXX 画板
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
+----
+1. [苹果风轮播](https://moonlightsmile.github.io/appleStyle/index.html)
+2. [在线简历](https://moonlightsmile.github.io/resume/index.html)
+3. [canvas画板](https://moonlightsmile.github.io/draw/)
+4. [豆瓣 Top250](https://moonlightsmile.github.io/DoubanTop250/index.html)
+5. [导航首页](https://moonlightsmile.github.io/nav/index.html)
+6. [留言板](https://moonlightsmile.github.io/postMessage/index.html)
 
 # 联系方式
+----
+- QQ:362652565
+- Email:362652565@qq.com
+- 手机:13116657989
 
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
 `
 writeCss("", css1, 1, () => {
   createPaper()
