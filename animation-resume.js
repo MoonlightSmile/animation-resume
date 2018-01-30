@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":8}],4:[function(require,module,exports) {
+},{"./bundle-url":6}],4:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":5}],6:[function(require,module,exports) {
+},{"_css_loader":5}],7:[function(require,module,exports) {
 var global = (1,eval)("this");
 
 /* **********************************************
@@ -979,7 +979,7 @@ Prism.languages.js = Prism.languages.javascript;
 
 })();
 
-},{}],7:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * marked - a markdown parser
@@ -2453,7 +2453,6 @@ const css3 = `/*
   a {
     color: #5082BF;
     text-decoration: none;
-    border-bottom: 1px solid ;
     font-family: cursive;
     transition: all .1s;
   }
@@ -2507,16 +2506,16 @@ const markdown = `# 自我介绍
 - 手机 13116657989
 
 `;
-writeCss("", css1, 1, () => {
+writeCss("", css1, 30, () => {
   createPaper();
-  writeMarkdown(markdown, 1, () => {
-    writeCss(css1, css2, 1, () => {
+  writeMarkdown(markdown, 60, () => {
+    writeCss(css1, css2, 30, () => {
       MarkdownToHtml();
-      writeCss(css1 + css2, css3, 1);
+      writeCss(css1 + css2, css3, 30);
     });
   });
 });
-},{"./css/default.css":4,"prismjs":6,"marked":7}],9:[function(require,module,exports) {
+},{"./css/default.css":4,"prismjs":7,"marked":8}],9:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -2536,7 +2535,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('wss://' + hostname + ':' + '56638' + '/');
+  var ws = new WebSocket('wss://' + hostname + ':' + '59991' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
