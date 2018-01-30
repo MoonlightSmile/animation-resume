@@ -149,7 +149,6 @@ const css3 = `/*
   a {
     color: #5082BF;
     text-decoration: none;
-    border-bottom: 1px solid ;
     font-family: cursive;
     transition: all .1s;
   }
@@ -203,12 +202,12 @@ const markdown = `# 自我介绍
 - 手机 13116657989
 
 `
-writeCss("", css1, 1, () => {
+writeCss("", css1, 30, () => {
   createPaper()
-  writeMarkdown(markdown, 1, () => {
-    writeCss(css1, css2, 1, () => {
+  writeMarkdown(markdown, 60, () => {
+    writeCss(css1, css2, 30, () => {
       MarkdownToHtml()
-      writeCss(css1 + css2, css3, 1)
+      writeCss(css1 + css2, css3, 30)
     })
   })
 })
