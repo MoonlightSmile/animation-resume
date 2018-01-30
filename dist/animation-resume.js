@@ -2441,7 +2441,7 @@ const css3 = `/*
  .resume {
   color: #333333;
   background: #fff;
-  font-family: "Hanzipen SC"
+  font-family: cursive
  }
   hr {
     border:none;
@@ -2454,7 +2454,7 @@ const css3 = `/*
     color: #5082BF;
     text-decoration: none;
     border-bottom: 1px solid ;
-    font-family: "Hanzipen SC";
+    font-family: cursive;
     transition: all .1s;
   }
   a:hover {
@@ -2536,7 +2536,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '55902' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '56638' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

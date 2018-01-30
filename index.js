@@ -137,7 +137,7 @@ const css3 = `/*
  .resume {
   color: #333333;
   background: #fff;
-  font-family: "Hanzipen SC"
+  font-family: cursive
  }
   hr {
     border:none;
@@ -150,7 +150,7 @@ const css3 = `/*
     color: #5082BF;
     text-decoration: none;
     border-bottom: 1px solid ;
-    font-family: "Hanzipen SC";
+    font-family: cursive;
     transition: all .1s;
   }
   a:hover {
