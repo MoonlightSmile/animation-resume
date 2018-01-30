@@ -2402,7 +2402,7 @@ html{
 
 .wrap-code {
 
-  width: 50%;
+  width: 40%;
 }
 
 /* 我需要一张白纸
@@ -2410,12 +2410,11 @@ html{
 */
 .wrap-paper {
   position: fixed;
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   padding: 16px;
   right: 0;
-  padding: 16px;
 }
 .wrap-paper .resume {
   border: 1px solid #aaa;
@@ -2442,70 +2441,35 @@ const css3 = `/*
 `;
 
 const markdown = `# 自我介绍
-
-我叫 XXX
-1990 年 1 月出生
-XXX 学校毕业
+----
+我叫蔡逍侠
+1994 年 12 月出生
+宁波电视大学毕业
 自学前端半年
 希望应聘前端开发岗位
 
 # 技能介绍
+----
+- 熟悉 JavaScript CSS HTML
+- 熟悉 \`yarn\`，\`npm\`，\`parcel\`, \`git\`
+- 熟悉 \`css3\`, \`HTML5\`
 
-熟悉 JavaScript CSS
 
 # 项目介绍
-
-1. XXX 轮播
-2. XXX 简历
-3. XXX 画板
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
+----
+1. [苹果风轮播](https://moonlightsmile.github.io/appleStyle/index.html)
+2. [在线简历](https://moonlightsmile.github.io/resume/index.html)
+3. [canvas画板](https://moonlightsmile.github.io/draw/)
+4. [豆瓣 Top250](https://moonlightsmile.github.io/DoubanTop250/index.html)
+5. [导航首页](https://moonlightsmile.github.io/nav/index.html)
+6. [留言板](https://moonlightsmile.github.io/postMessage/index.html)
 
 # 联系方式
+----
+- QQ:362652565
+- Email:362652565@qq.com
+- 手机:13116657989
 
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-
-# 联系方式
-
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
 `;
 writeCss("", css1, 1, () => {
   createPaper();
@@ -2516,7 +2480,7 @@ writeCss("", css1, 1, () => {
     });
   });
 });
-},{"./css/default.css":3,"prismjs":5,"marked":6}],8:[function(require,module,exports) {
+},{"./css/default.css":3,"prismjs":5,"marked":6}],11:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -2536,7 +2500,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('wss://' + hostname + ':' + '56759' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '63110' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -2637,5 +2601,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[8,2])
+},{}]},{},[11,2])
 //# sourceMappingURL=/dist/animation-resume.map

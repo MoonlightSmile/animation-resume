@@ -7,11 +7,9 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
 .comment {
   color: #727F8E;
 }
-
 .selector {
   color: #000;
 }
@@ -19,31 +17,31 @@
 .property {
   color: #000;
 }
-
 .wrap-code {
   height: 100%;
-  display: flex;
-}
+  display:flex;
 
+}
 pre {
   margin: 0;
 }
-
 #code {
   padding: 16px;
 }
 
-@keyframes breath {
-  0% {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+@keyframes breath{
+  0%{
+    box-shadow: 0 0 10px rgba(0,0,0,1)
   }
-  100% {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+  100%{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
   }
 }
 
 
-
+code {
+  background: rgba(0, 0, 0, .1);
+}
 .wrap-paper {
   padding: 16px;
   font-size: 16px;
@@ -53,5 +51,9 @@ pre {
   padding: 36px;
   overflow: scroll;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+.wrap-paper .resume h1 {
+  font-weight: 400;
 }
